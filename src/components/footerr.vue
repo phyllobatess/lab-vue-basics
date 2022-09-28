@@ -1,16 +1,4 @@
-<script setup>
-import { ref } from "vue";
 
-const datas = ref([
-  { tittle: "AAA", description: "BBB", content: "CCC" },
-  { tittle: "XXX", description: "YYY", content: "ZZZ" },
-  { tittle: "DDD", description: "EEE", content: "FFF" },
-]);
-
-const showUp = ref(true);
-
-
-</script>
 
 <template>
   <div class="spacing">
@@ -31,6 +19,20 @@ const showUp = ref(true);
 
   
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const datas = ref([
+  { tittle: "AAA", description: "BBB", content: "CCC" },
+  { tittle: "XXX", description: "YYY", content: "ZZZ" },
+  { tittle: "DDD", description: "EEE", content: "FFF" },
+]);
+
+const showUp = ref(true);
+
+
+</script>
 
 <style scoped>
   .footer{
