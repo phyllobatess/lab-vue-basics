@@ -1,23 +1,25 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import navbar from './components/navbar.vue';
+import footerr from './components/footerr.vue';
 </script>
 
-<template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+<template >
+  <div class="style">
+  <navbar/>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <footerr/>
+  </div>
 
-  <main>
-    <TheWelcome />
-  </main>
+
 </template>
 
 <style scoped>
+  .style{
+    display:flex;
+    flex-direction: column;
+  }
 header {
   line-height: 1.5;
 }
